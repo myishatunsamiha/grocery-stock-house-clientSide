@@ -1,0 +1,46 @@
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.features li {
+    border: 1px solid rgba(255, 255, 255, 0.589);
+    margin-right: 30px;
+    font-size: 16px;
+}
+
+
+.features li:hover {
+    color: rgb(26, 226, 26);
+    font-size: 24px;
+    background-color: gray;
+}
+
+
+.newsletter {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.newsletter input {
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.555);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .newsletter {
+        width: 80%;
+    }
+}
