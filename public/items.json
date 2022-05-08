@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Tomato",
+        "img": "https://i.ibb.co/qrVhJKV/tomato.png",
+        "description": "Fresh red tomato full of vitamins. You will get 500gm in one quantity unit.",
+        "price": 20,
+        "quantity": 40,
+        "supplierName": "Kazi farm",
+        "sold": 5
+    },
+    {
+        "name": "Sugar",
+        "img": "https://i.ibb.co/WcZDvkP/sugar.png",
+        "description": "ACI pure white sugar. You will get 1kg packet in one quantity unit.",
+        "price": 30,
+        "quantity": 30,
+        "supplierName": "Ready farm",
+        "sold": 10
+    },
+    {
+        "name": "Rice",
+        "img": "https://i.ibb.co/4RCVv5v/rice.png",
+        "description": "Premium quality brown rice. You will get 5kg in one quantity unit.",
+        "price": 300,
+        "quantity": 50,
+        "supplierName": "K&k rice",
+        "sold": 15
+    },
+    {
+        "name": "Cucumber",
+        "img": "https://i.ibb.co/SxbPFNy/cucumber.png",
+        "description": "Fresh green cucumber full of minerals. You will get 500gm in one quantity unit.",
+        "price": 35,
+        "quantity": 40,
+        "supplierName": "Kazi farm",
+        "sold": 5
+    },
+    {
+        "name": "Chili",
+        "img": "https://i.ibb.co/mrj1H97/chili.png",
+        "description": "Red and green chilies, very spicy. You will get 500gm in one quantity unit.",
+        "price": 25,
+        "quantity": 30,
+        "supplierName": "Vege farm",
+        "sold": 20
+    },
+    {
+        "name": "Chicken",
+        "img": "https://i.ibb.co/236PD2k/chicken.png",
+        "description": "Poultry chicken with quality meat. You will get around 700gm in one quantity unit.",
+        "price": 210,
+        "quantity": 10,
+        "supplierName": "Fresh farm",
+        "sold": 6
+    },
+    {
+        "name": "Beef",
+        "img": "https://i.ibb.co/HKg0yFK/beef.png",
+        "description": "Fresh red beef meat. You will get 1kg in one quantity unit.",
+        "price": 600,
+        "quantity": 20,
+        "supplierName": "Fresh farm",
+        "sold": 5
+    },
+    {
+        "name": "Lentils",
+        "img": "https://i.ibb.co/x3BMRWJ/lentils.png",
+        "description": "Red lentils full of protein. You will get 500gm in one quantity unit.",
+        "price": 20,
+        "quantity": 40,
+        "supplierName": "Ready farm",
+        "sold": 10
+    },
+    {
+        "name": "Papaya",
+        "img": "https://i.ibb.co/0QnDfff/papaya.png",
+        "description": "Tropical papaya full of antioxidant. You will get around 500mg in one quantity unit.",
+        "price": 30,
+        "quantity": 30,
+        "supplierName": "Kazi farm",
+        "sold": 7
+    },
+    {
+        "name": "Fish",
+        "img": "https://i.ibb.co/0n4psmZ/fish.png",
+        "description": "Fresh Catla fish directly from the pond. You will get 800mg in one quantity unit.",
+        "price": 300,
+        "quantity": 25,
+        "supplierName": "Fresh farm",
+        "sold": 10
+    }
+]

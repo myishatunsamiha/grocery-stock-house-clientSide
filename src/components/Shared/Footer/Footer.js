@@ -15,7 +15,7 @@ const Footer = () => {
 
                 <div className='p-4'>
                     <p>Links</p>
-                    <small><Link to='/' className='text-decoration-none'>Home</Link></small><br />
+                    <small><Link to='/' className='text-decoration-none text-success'>Home</Link></small><br />
                 </div>
             </div>
             <p className='text-center'><small>copyright &copy; {new Date().getFullYear()} </small></p>
