@@ -104,34 +104,41 @@ const InventoryItem = () => {
     }
 
     return (
-        <div className='inventory-item-card-container d-flex justify-content-center'>
-            <div className="card">
-                <img src={item?.img} className="card-img-top" alt="..." style={{ maxWidth: '80%', maxHeight: '80%', margin: '0 auto' }} />
-                <div className="card-body">
-                    <h5 className="card-title">{item?._id}</h5>
-                    <h5 className="card-title">Name: {item?.name}</h5>
-                    <p className="card-text">Description: {item?.description}.</p>
-                </div>
-                <ul className="list-group list-group-flush">
-                    <li className="list-group-item">Price: {item?.price} Tk</li>
-                    <li className="list-group-item">Qnt: {item?.quantity} unit</li>
-                    <li className="list-group-item">Supplier: {item?.supplierName}</li>
-                    <li className="list-group-item">Supplier: {item?.sold}</li>
-                    <li className="list-group-item">Category: {item?.category}</li>
-                </ul>
-                <div className="card-body d-flex justify-content-between">
-
-                    <div>
-                        <button className='btn btn-danger' onClick={handleDeliverItem}>Delivered</button>
+        <div>
+            <h1>Inventory Item details</h1>
+            <div className='inventory-item-card-container d-flex justify-content-center'>
+                <div className="card">
+                    <img src={item?.img} className="card-img-top" alt="..." style={{ maxWidth: '80%', maxHeight: '80%', margin: '0 auto' }} />
+                    <div className="card-body">
+                        <h5 className="card-title">{item?._id}</h5>
+                        <h5 className="card-title">Name: {item?.name}</h5>
+                        <p className="card-text">Description: {item?.description}.</p>
                     </div>
-                    <div>
+                    <ul className="list-group list-group-flush">
+                        <li className="list-group-item">Price: {item?.price} Tk</li>
+                        <li className="list-group-item">Qnt: {item?.quantity} unit</li>
+                        <li className="list-group-item">Supplier: {item?.supplierName}</li>
+                        <li className="list-group-item">Supplier: {item?.sold}</li>
+                        <li className="list-group-item">Category: {item?.category}</li>
+                    </ul>
+                    <div className="card-body d-flex justify-content-between">
 
-                        <form onSubmit={handleUpdateItem}>
-                            <input type="number" name="increaseQuantity" id="increaseQuantity" placeholder='quantity' />
-                            <button>Increase Quantity</button>
-                        </form>
+                        <div>
+                            <button className='btn btn-danger' onClick={handleDeliverItem}>Delivered</button>
+                        </div>
+                        <div>
+
+                            <form onSubmit={handleUpdateItem}>
+                                <input type="number" name="increaseQuantity" id="increaseQuantity" placeholder='quantity' />
+                                <button>Increase Quantity</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <div className='manage-inventory-btn-section d-flex justify-content-center m-5'>
+                <Link to='/inventories'><button className='btn btn-dark text-white'>Manage Inventories</button></Link>
             </div>
         </div>
     );

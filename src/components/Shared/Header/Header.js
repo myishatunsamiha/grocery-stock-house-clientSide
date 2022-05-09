@@ -27,14 +27,14 @@ const Header = () => {
                         <Nav.Link href="home#header">header</Nav.Link>
                         <Nav.Link href="home#inventories">Inventories</Nav.Link>
                         <Nav.Link href="home#mainfeatures">Main Features</Nav.Link>
-
+                        <Nav.Link as={Link} to='/blogs'>Blogs</Nav.Link>
                     </Nav>
                     <Nav>
                         {
                             user?.emailVerified && <>
                                 <Nav.Link as={Link} to='/inventories'>Manage Items</Nav.Link>
                                 <Nav.Link as={Link} to='/additem'>Add items</Nav.Link>
-                                <Nav.Link as={Link} to='orders'>My items</Nav.Link>
+                                <Nav.Link as={Link} to='/'>My items</Nav.Link>
                             </>
                         }
 
