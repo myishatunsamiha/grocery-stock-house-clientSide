@@ -1,0 +1,14 @@
+[
+    {
+        "q": "Difference between javascript and node.js?",
+        "ans": "1. JS is a programming language. NodeJS is a runtime environment of JavaScript. 2. Js is widely used for front-end development. Node.js is used for server-side development. 3. JS is capable of manipulation the document object model(DOM). Node.js isn't capable of doing that. 4. Js is a newer version of ECMA Script that runs on chrome's V8 engine(it is written in C++). Node.js is written using C, C++, JavaScript."
+    },
+    {
+        "q": "When should you use nodejs and when should you use mongodb?",
+        "ans": "NodeJS is a JavaScript runtime environment. On the other hand, MongoDB is a NoSQL Database which is document oriented. If we need persistent data availability than we need to use a database such as mongodb. To get connected with the database we need a javascript runtime environment like nodejs. NodeJS enables the client side sever to connect to a outside server."
+    },
+    {
+        "q": "Differences between SQL and NoSQL databases?",
+        "ans": "1.SQL is a relational database management system. NoSQL is distributed and non-relational  database system. 2. SQL is vertically scalable. NoSQL is horizontally scalable. 3. SQL has fixed schema. NoSQL has dynamic schema. 4.SQL is suitable for critical and complex queries. NoSQL isn't a good fit for complex queries. 5. SQL is suitable for business where consistency is critical. NoSQL is best for rapidly growing businesses with lacking of schemata."
+    }
+]

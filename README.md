@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Grocery Stock House - A Inventory website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This website is designed for a grocery business where owners and employees of the business can store, manage and keep track of their store inventories.
 
-## Available Scripts
+## [https://grocery-store-house.web.app](https://grocery-store-house.web.app)
 
-In the project directory, you can run:
 
-### `npm start`
+#### What I have done in this project: 
+* Main routes of the project: home, blogs, login, register, stock display and update, manage items, add items and my items. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* On the home page, there are six sections. Navbar, banner(expressing the moto), inventories, main features of the websites, newsletter subscription and footer. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Each inventory has information like id, name, img, description, price, quantity, category, supplier and sold. On the home page, we will be able to see maximum 6 items from the inventory and a manage inventory button will be there to redirect us to a page(Manage Inventory) where we can see all the inventory items. 
 
-### `npm test`
+* On the manage inventory page, we will see all the inventory items' name, img, quantity and a corresponding delete button for each item. here, an authorized user can delete any item also can add new items by clicking the add items button.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Add items button will bring you to a page where an authorized user will be able to add new products along with their email address. 
 
-### `npm run build`
+* On the my items page, the authorized user will be able to see the items which he/she has added and he/she can delete those item if they wish to do so. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*On the inventory item page(dynamic page for each item), the authorized user will be able to add any quantity to a product or he/she can reduce the item by one by clicking delivered button.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* On the blogs page, you can see three frequently asked questions have been answered.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Firebase email-password authentication along with google firebase login have been implemented. 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### List of technologies: 
+* Languages: html, vanilla css, javascript
+* Libraries and frameworks: bootstrap, react, react-bootstrap, react-router, firebase, react-firebase-hooks, node.js, mongodb

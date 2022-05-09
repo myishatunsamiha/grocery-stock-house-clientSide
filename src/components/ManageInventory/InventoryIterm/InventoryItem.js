@@ -118,7 +118,7 @@ const InventoryItem = () => {
                         <li className="list-group-item">Price: {item?.price} Tk</li>
                         <li className="list-group-item">Qnt: {item?.quantity} unit</li>
                         <li className="list-group-item">Supplier: {item?.supplierName}</li>
-                        <li className="list-group-item">Supplier: {item?.sold}</li>
+                        <li className="list-group-item">Sold: {item?.sold}</li>
                         <li className="list-group-item">Category: {item?.category}</li>
                     </ul>
                     <div className="card-body d-flex justify-content-between">
