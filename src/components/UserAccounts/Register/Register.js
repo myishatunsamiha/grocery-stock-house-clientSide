@@ -1,9 +1,9 @@
 import { sendPasswordResetEmail } from 'firebase/auth';
 import React from 'react';
-import { useCreateUserWithEmailAndPassword, sendEmailVerification, useSendEmailVerification } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, sendEmailVerification } from 'react-firebase-hooks/auth';
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
-import Loading from '../../UserAccount/Loading/Loading';
+import Loading from './../Loading/Loading';
 import { toast } from 'react-toastify';
 import './Register.css';
 
@@ -17,10 +17,6 @@ const Register = () => {
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });       // variable to create user using email-password
     // { sendEmailVerification: true } parameter is used for email verification
 
-    const [sendEmailVerification, sending, verificationError] = useSendEmailVerification(
-        auth
-    );
-
 
     const location = useLocation();
     let from = location.state?.from?.pathname || '/';
@@ -28,23 +24,17 @@ const Register = () => {
 
 
     let errorElem;
-    if (registerError || verificationError) {        // if any error, show the error 
+    if (registerError) {        // if any error, show the error 
         errorElem = <p className='text-danger'>Error: {registerError?.message}</p>;
     }
 
-    if (loading || sending) {          // if the process is loading, show loading spinner
+    if (loading) {          // if the process is loading, show loading spinner
         return <Loading></Loading>;
     }
 
 
-    if (user?.auth?.emailVerified) {
+    if (user) {
         navigate(from, { replace: true });
-
-    } else if (user && !(user?.auth?.emailVerified)) {
-        errorElem = <p className='text-danger'>Email not verified. Please verify your email. Or, <button className='btn btn-link' onClick={async () => {
-            await sendEmailVerification();
-            toast('Sent email');
-        }}>Resend verification mail.</button></p>;
     }
 
     const handleRegister = event => {
