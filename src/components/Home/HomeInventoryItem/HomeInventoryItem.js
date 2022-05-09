@@ -12,7 +12,7 @@ const HomeInventoryItem = ({ item }) => {
                 <img src={img} className="card-img-top" alt="..." style={{ maxWidth: '100%', maxHeight: '100%' }} />
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
-                    <p className="card-text">{description}</p>
+                    <p className="card-text" title={description}>{description.slice(0, 35)}...</p>
                 </div>
                 <ul className="list-group list-group-flush">
                     <li className="list-group-item">Price: {price} Tk</li>
@@ -24,7 +24,7 @@ const HomeInventoryItem = ({ item }) => {
                     <Link to={'/inventory/${_id}'}><button className='btn btn-dark text-white'>Stock Update</button></Link>
                 </div>
             </div>
-        </div>
+        </div >
 
     );
 };

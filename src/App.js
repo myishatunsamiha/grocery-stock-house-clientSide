@@ -17,13 +17,13 @@ function App() {
     <div>
       <Header></Header>
       <Routes>
-        <Route path='/' element={
-          <RequireAuth><Home></Home></RequireAuth>
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
+
+        <Route path='/inventories' element={
+          <RequireAuth><Inventories></Inventories></RequireAuth>
         }></Route>
-        <Route path='/home' element={
-          <RequireAuth><Home></Home></RequireAuth>
-        }></Route>
-        <Route path='/inventories' element={<Inventories></Inventories>}></Route>
+
         <Route path='/inventory/:id' element={<Home></Home>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>

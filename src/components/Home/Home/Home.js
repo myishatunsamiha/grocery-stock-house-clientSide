@@ -10,12 +10,7 @@ const Home = () => {
 
     const [items, setItems] = useState([]);
 
-    // useEffect(() => {
-    //     fetch('items.json')
-    //         .then(res => res.json())
-    //         .then(data => setItems(data))
-    // }, []);
-
+    // maximum six items will be fetch from the server side to display on the home page
     useEffect(() => {
         fetch('http://localhost:5000/inventoryhome')
             .then(res => res.json())
@@ -33,7 +28,7 @@ const Home = () => {
 
             <div className='row row-cols-1 row-cols-md-3 g-4 justify-content-start m-4'>
                 {
-                    items.map(item => <HomeInventoryItem item={item}></HomeInventoryItem>)
+                    items.map(item => <HomeInventoryItem key={item._id} item={item}></HomeInventoryItem>)
                 }
             </div>
 

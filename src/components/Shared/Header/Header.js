@@ -30,17 +30,16 @@ const Header = () => {
 
                     </Nav>
                     <Nav>
-                        <Nav.Link as={Link} to="/about">About</Nav.Link>
                         {
                             user?.emailVerified && <>
-                                <Nav.Link as={Link} to='addservice'>Add</Nav.Link>
-                                <Nav.Link as={Link} to='manage'>Manage</Nav.Link>
-                                <Nav.Link as={Link} to='orders'>Orders</Nav.Link>
+                                <Nav.Link as={Link} to='/inventories'>Manage Items</Nav.Link>
+                                <Nav.Link as={Link} to='manage'>Add items</Nav.Link>
+                                <Nav.Link as={Link} to='orders'>My items</Nav.Link>
                             </>
                         }
 
                         {
-                            user?.emailVerified ? <button className="btn btn-link text-danger text-decoration-none ps-0" style={{ width: '60px' }} onClick={handleSignOut}>SignOut</button> :
+                            user?.emailVerified ? <button className="btn btn-link text-danger text-decoration-none ps-0" style={{ width: '60px' }} onClick={handleSignOut}>Logout</button> :
                                 loading ? '' : <><Nav.Link as={Link} to="/login">Login</Nav.Link><Nav.Link as={Link} to="/register">Register</Nav.Link> </>
                         }
 
