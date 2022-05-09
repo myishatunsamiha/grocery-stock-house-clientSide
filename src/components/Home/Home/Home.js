@@ -7,13 +7,21 @@ import Newsletter from '../Newsletter/Newsletter';
 import HomeInventoryItem from '../HomeInventoryItem/HomeInventoryItem';
 
 const Home = () => {
+
     const [items, setItems] = useState([]);
 
+    // useEffect(() => {
+    //     fetch('items.json')
+    //         .then(res => res.json())
+    //         .then(data => setItems(data))
+    // }, []);
+
     useEffect(() => {
-        fetch('items.json')
+        fetch('http://localhost:5000/inventoryhome')
             .then(res => res.json())
-            .then(data => setItems(data))
+            .then(data => setItems(data));
     }, []);
+
 
     return (
         <div className='home'>
