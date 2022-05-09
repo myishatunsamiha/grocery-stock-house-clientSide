@@ -21,7 +21,7 @@ const HomeInventoryItem = ({ item }) => {
                     <li className="list-group-item">Supplier: {sold}</li>
                 </ul>
                 <div className="card-body">
-                    <Link to={'/inventory/${_id}'}><button className='btn btn-dark text-white'>Stock Update</button></Link>
+                    <Link to={`/inventory/${_id}`}><button className='btn btn-dark text-white'>Stock Update</button></Link>
                 </div>
             </div>
         </div >

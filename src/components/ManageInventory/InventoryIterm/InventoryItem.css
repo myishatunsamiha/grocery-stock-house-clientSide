@@ -1,0 +1,9 @@
+.inventory-item-card-container card {
+    width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .inventory-item-card-container card {
+        width: 80%;
+    }
+}

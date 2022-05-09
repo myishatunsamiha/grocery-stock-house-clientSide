@@ -33,7 +33,7 @@ const Header = () => {
                         {
                             user?.emailVerified && <>
                                 <Nav.Link as={Link} to='/inventories'>Manage Items</Nav.Link>
-                                <Nav.Link as={Link} to='manage'>Add items</Nav.Link>
+                                <Nav.Link as={Link} to='/additem'>Add items</Nav.Link>
                                 <Nav.Link as={Link} to='orders'>My items</Nav.Link>
                             </>
                         }
