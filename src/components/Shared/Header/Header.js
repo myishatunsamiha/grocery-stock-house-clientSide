@@ -14,7 +14,7 @@ const Header = () => {
 
     const handleSignOut = async (event) => {
         await signOut(auth);
-        navigate('/login');
+        navigate('/');
     }
 
     return (
@@ -34,7 +34,7 @@ const Header = () => {
                             user?.emailVerified && <>
                                 <Nav.Link as={Link} to='/inventories'>Manage Items</Nav.Link>
                                 <Nav.Link as={Link} to='/additem'>Add items</Nav.Link>
-                                <Nav.Link as={Link} to='/'>My items</Nav.Link>
+                                <Nav.Link as={Link} to='/myitems'>My items</Nav.Link>
                             </>
                         }
 
