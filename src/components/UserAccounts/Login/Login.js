@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import auth from '../../../firebase.init';
 import Loading from './../Loading/Loading';
+import GoogleLogin from './../GoogleLogin/GoogleLogin';
 import './Login.css';
 
 const Login = () => {
@@ -73,7 +74,7 @@ const Login = () => {
                 <p>Forgot Password? <button className='btn btn-link text-success fw-bold text-decoration-none' onClick={resetPassword}>Reset Password</button></p>
 
                 <h6 className='text-muted text-center mt-5 mb-3'>OR</h6>
-                <Link to='/'><button className='btn btn-dark w-100'>Google Login</button></Link>
+                <GoogleLogin></GoogleLogin>
             </div>
 
 

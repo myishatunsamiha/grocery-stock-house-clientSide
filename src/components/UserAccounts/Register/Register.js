@@ -6,6 +6,7 @@ import auth from '../../../firebase.init';
 import Loading from './../Loading/Loading';
 import { toast } from 'react-toastify';
 import './Register.css';
+import GoogleLogin from '../GoogleLogin/GoogleLogin';
 
 const Register = () => {
 
@@ -62,7 +63,7 @@ const Register = () => {
             <p>Do you have an account? <Link to='/login' className='text-success fw-bold'>Please Login</Link></p>
 
             <h6 className='text-muted text-center mt-5 mb-3'>OR</h6>
-            <Link to='/'><button className='btn btn-dark w-100'>Google Login</button></Link>
+            <GoogleLogin></GoogleLogin>
         </div>
     );
 };

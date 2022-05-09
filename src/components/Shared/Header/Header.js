@@ -40,7 +40,7 @@ const Header = () => {
                         }
 
                         {
-                            user?.emailVerified ? <button className="btn btn-link text-white text-decoration-none" onClick={handleSignOut}>SignOut</button> :
+                            user?.emailVerified ? <button className="btn btn-link text-danger text-decoration-none ps-0" style={{ width: '60px' }} onClick={handleSignOut}>SignOut</button> :
                                 loading ? '' : <><Nav.Link as={Link} to="/login">Login</Nav.Link><Nav.Link as={Link} to="/register">Register</Nav.Link> </>
                         }
 
