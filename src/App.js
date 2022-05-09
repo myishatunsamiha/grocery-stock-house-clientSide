@@ -5,6 +5,10 @@ import Footer from './components/Shared/Footer/Footer';
 import { Route, Routes } from 'react-router-dom';
 import Inventories from './components/ManageInventory/Inventories/Inventories';
 import Home from './components/Home/Home/Home';
+import Login from './components/UserAccounts/Login/Login';
+import Register from './components/UserAccounts/Register/Register';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -13,10 +17,14 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/inventories' element={<Inventories></Inventories>}></Route>
         <Route path='/inventory/:id' element={<Home></Home>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/register' element={<Register></Register>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }

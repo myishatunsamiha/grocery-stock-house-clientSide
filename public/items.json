@@ -6,7 +6,8 @@
         "price": 20,
         "quantity": 40,
         "supplierName": "Kazi farm",
-        "sold": 5
+        "sold": 5,
+        "category": "Vegetable"
     },
     {
         "name": "Sugar",
@@ -15,7 +16,8 @@
         "price": 30,
         "quantity": 30,
         "supplierName": "Ready farm",
-        "sold": 10
+        "sold": 10,
+        "category": "Spice"
     },
     {
         "name": "Rice",
@@ -24,7 +26,8 @@
         "price": 300,
         "quantity": 50,
         "supplierName": "K&k rice",
-        "sold": 15
+        "sold": 15,
+        "category": "Grain"
     },
     {
         "name": "Cucumber",
@@ -33,7 +36,8 @@
         "price": 35,
         "quantity": 40,
         "supplierName": "Kazi farm",
-        "sold": 5
+        "sold": 5,
+        "category": "Vegetable"
     },
     {
         "name": "Chili",
@@ -42,7 +46,8 @@
         "price": 25,
         "quantity": 30,
         "supplierName": "Vege farm",
-        "sold": 20
+        "sold": 20,
+        "category": "Vegetable"
     },
     {
         "name": "Chicken",
@@ -51,7 +56,8 @@
         "price": 210,
         "quantity": 10,
         "supplierName": "Fresh farm",
-        "sold": 6
+        "sold": 6,
+        "category": "Non-veg"
     },
     {
         "name": "Beef",
@@ -60,7 +66,8 @@
         "price": 600,
         "quantity": 20,
         "supplierName": "Fresh farm",
-        "sold": 5
+        "sold": 5,
+        "category": "Non-veg"
     },
     {
         "name": "Lentils",
@@ -69,7 +76,8 @@
         "price": 20,
         "quantity": 40,
         "supplierName": "Ready farm",
-        "sold": 10
+        "sold": 10,
+        "category": "Grain"
     },
     {
         "name": "Papaya",
@@ -78,7 +86,8 @@
         "price": 30,
         "quantity": 30,
         "supplierName": "Kazi farm",
-        "sold": 7
+        "sold": 7,
+        "category": "Vegetable"
     },
     {
         "name": "Fish",
@@ -87,6 +96,7 @@
         "price": 300,
         "quantity": 25,
         "supplierName": "Fresh farm",
-        "sold": 10
+        "sold": 10,
+        "category": "Non-veg"
     }
 ]

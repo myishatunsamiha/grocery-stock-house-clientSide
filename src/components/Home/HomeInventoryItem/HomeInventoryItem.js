@@ -7,7 +7,7 @@ const HomeInventoryItem = ({ item }) => {
 
     return (
 
-        <div className="col">
+        <div className="col" id='inventories'>
             <div className="card">
                 <img src={img} className="card-img-top" alt="..." style={{ maxWidth: '100%', maxHeight: '100%' }} />
                 <div className="card-body">

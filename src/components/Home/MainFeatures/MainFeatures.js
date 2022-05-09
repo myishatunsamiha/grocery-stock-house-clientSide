@@ -3,7 +3,7 @@ import { EyeIcon, UserAddIcon, PlusCircleIcon, DocumentAddIcon, XCircleIcon, Arr
 
 const MainFeatures = () => {
     return (
-        <>
+        <div id='mainfeatures'>
             <h1 className='text-center'>Main Features</h1>
             <div className='features bg-dark text-light text-center py-4'>
 
@@ -18,7 +18,7 @@ const MainFeatures = () => {
                 </ul>
 
             </div>
-        </>
+        </div>
     );
 };
 
