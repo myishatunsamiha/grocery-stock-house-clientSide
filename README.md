@@ -18,7 +18,7 @@ This website is designed for a grocery business where owners and employees of th
 
 * On the my items page, the authorized user will be able to see the items which he/she has added and he/she can delete those item if they wish to do so. 
 
-*On the inventory item page(dynamic page for each item), the authorized user will be able to add any quantity to a product or he/she can reduce the item by one by clicking delivered button.
+* On the inventory item page(dynamic page for each item), the authorized user will be able to add any quantity to a product or he/she can reduce the item by one by clicking delivered button.
 
 * On the blogs page, you can see three frequently asked questions have been answered.
 
